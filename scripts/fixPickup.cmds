@@ -1,0 +1,14 @@
+importfonts firefightfolder\fonts\font_package.bin
+
+edittag ui\hud\hud_messages.multilingual_unicode_string_list
+setstring english ssmg_pickup "\uE461\uE45F to pick up|n|r\uE074"
+setstring english ssmg_swap "\uE461\uE45F to swap for|n|r\uE074"
+setstring english ssmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE074"
+setstring english ssmg_switch_to  "Out of ammo|nPress \uE446 to switch to |r\uE074"
+SaveTagChanges
+Exit
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].StateLeftRightOffset_HO 0 0.3
+savetagchanges
+Exit

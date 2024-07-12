@@ -1,0 +1,10 @@
+edittag levels\atlas\h100\sky\h100_sky.camera_fx_settings
+setfield bloomintensity.strength 0.1
+savetagchanges
+exit
+
+edittag levels\atlas\l200\sky\l200.camera_fx_settings
+setfield bloomintensity.strength 0.2
+savetagchanges
+exit
+

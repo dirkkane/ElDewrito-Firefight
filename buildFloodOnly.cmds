@@ -1,0 +1,62 @@
+createmodpackage 1 large
+
+echo ==Set variables==
+setvariable firefightfolder F:\Documents\eldewrito_modding\dew_ff
+setvariable audiocache F:\Documents\eldewrito_modding\audiocache
+setvariable shadercache F:\Documents\eldewrito_modding\shadercache
+
+echo ==Cache setup...==
+useaudiocache audiocache
+useshadercache shadercache
+
+echo ==h100==
+opencachefile firefightfolder\source_maps\odst\h100.map
+porttag *.scnr 
+exit
+
+runcommands firefightfolder\scripts\cacheBuilder.cmds
+Exit
+
+echo ==h100 floodfight==
+runcommands firefightfolder\scripts\portFlood.cmds
+runcommands firefightfolder\scripts\floodSkybox.cmds
+
+DuplicateTag levels\atlas\h100\h100.scenario levels\dirk\floodfight\flood_h100.scenario
+edittag levels\dirk\floodfight\flood_h100.scenario
+setfield mapid 80085
+runcommands firefightfolder\scripts\h100disablePhantoms.cmds
+runcommands firefightfolder\scripts\h100floodCharPalette.cmds
+runcommands firefightfolder\scripts\h100floodWeapPalette.cmds
+runcommands firefightfolder\scripts\h100engineerAIFlood.cmds
+runcommands firefightfolder\scripts\floodSkyboxSCNR.cmds
+SaveTagChanges
+Exit
+
+echo ==l200==
+opencachefile firefightfolder\source_maps\odst\l200.map
+porttag *.scnr
+Exit
+
+echo ==l200 floodfight==
+DuplicateTag levels\atlas\l200\l200.scenario levels\dirk\floodfight\flood_l200.scenario
+edittag levels\dirk\floodfight\flood_l200.scenario
+setfield mapid 80083
+runcommands firefightfolder\scripts\l200floodCharPalette.cmds
+runcommands firefightfolder\scripts\l200floodWeapPalette.cmds
+runcommands firefightfolder\scripts\l200engineerAIFlood.cmds
+runcommands firefightfolder\scripts\floodSkyboxSCNR.cmds
+runcommands firefightfolder\scripts\l200removeBuggerSpawns.cmds
+SaveTagChanges
+Exit
+
+echo ==fixbloom==
+runcommands firefightfolder\scripts\fixbloom.cmds
+
+echo ==images==
+addmodfiles firefightfolder\assets
+
+echo ==mapinfo==
+generatecampaignfile firefightfolder\mapinfo
+UpdateMapFiles firefightfolder\mapinfo
+
+savemodpackage

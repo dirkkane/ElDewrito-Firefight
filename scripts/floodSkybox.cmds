@@ -1,0 +1,21 @@
+EditTag levels\multi\guardian\sky\sky.render_model
+SetField materials[0].RenderMethod levels\multi\guardian\sky\shaders\skydome_dark.shader
+SetField materials[1].RenderMethod levels\multi\guardian\sky\shaders\guardian_sky_tree_branches.shader
+SetField materials[2].RenderMethod levels\solo\110_hc\shaders\flood_tendon.shader
+SetField materials[3].RenderMethod levels\multi\guardian\sky\shaders\guardian_sky_tree_strip.shader
+SetField materials[4].RenderMethod fx\null_object\shaders\invisible.shader
+SetField materials[5].RenderMethod levels\multi\guardian\sky\shaders\fog_plane.shader
+SaveTagChanges
+Exit
+
+EditTag levels\solo\050_floodvoi\sky\floodvoi.sky_atm_parameters
+setfield TransparentSortDistance 200
+setfield AtmosphereSettings[0].Intensity 0.1
+setfield AtmosphereSettings[1].Intensity 0.1
+setfield AtmosphereSettings[2].Intensity 0.1
+setfield AtmosphereSettings[3].Intensity 0.1
+setfield AtmosphereSettings[4].Intensity 0.1
+setfield AtmosphereSettings[5].Intensity 0.1
+setfield AtmosphereSettings[6].Intensity 0.1
+savetagchanges
+Exit

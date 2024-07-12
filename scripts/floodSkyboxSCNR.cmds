@@ -1,0 +1,2 @@
+setfield skyreferences[0].skyobject levels\multi\guardian\sky\sky.scenery
+setfield skyparameters levels\solo\050_floodvoi\sky\floodvoi.sky_atm_parameters

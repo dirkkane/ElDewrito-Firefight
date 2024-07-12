@@ -1,0 +1,14 @@
+H100.map ~ Mombasa Streets
+L200.map ~ Data Hive
+L300.map ~ Coastal Highway / Last Exit FF
+Sc100.map ~ Tayari Plaza
+Sc110.map ~ Uplift Reserve
+Sc120.map ~ Kizingo Boulevard
+Sc130.map ~ Oni Alpha Site
+Sc140.map ~ New Mombasa Police Department Headquarters (Nmpd Hq)
+
+
+Unused:
+C100.map ~ Prepare To Drop
+C200.map ~ Coastal Highway
+Sc150.map ~ Kikowani Station

@@ -1,0 +1,6 @@
+setfield CharacterPalette[0].Instance null
+setfield CharacterPalette[1].Instance null
+setfield CharacterPalette[2].Instance null
+setfield CharacterPalette[3].Instance null
+setfield CharacterPalette[30].Instance null
+setfield CharacterPalette[31].Instance null
