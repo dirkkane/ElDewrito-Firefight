@@ -1,9 +1,9 @@
 createmodpackage 1 large
 
 echo ==Set variables==
-setvariable firefightfolder F:\Documents\eldewrito_modding\dew_ff
-setvariable audiocache F:\Documents\eldewrito_modding\audiocache
-setvariable shadercache F:\Documents\eldewrito_modding\shadercache
+setvariable firefightfolder path
+setvariable audiocache path
+setvariable shadercache path
 
 echo ==Cache setup...==
 useaudiocache audiocache
