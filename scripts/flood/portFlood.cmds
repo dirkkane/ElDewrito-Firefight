@@ -1,0 +1,32 @@
+opencachefile firefightfolder\source_maps\h3\110_hc.map
+
+ignoreblamtag objects\characters\flood_infection\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\floodcombat_elite\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\floodcombat_brute\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\floodcombat_human\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\flood_tank\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\flood_stalker\shaders\flood_fronds.shader
+ignoreblamtag objects\characters\flood_ranged\shaders\flood_fronds.shader
+
+porttag replace objects\characters\flood_infection\ai\flood_infection.character
+porttag replace objects\characters\flood_ranged\ai\flood_pureform_ranged.character
+porttag replace objects\characters\flood_pureforms\ai\flood_pureform.character
+porttag replace objects\characters\flood_tank\ai\flood_pureform_tank.character
+porttag replace objects\characters\flood_stalker\ai\flood_pureform_stalker.character
+porttag replace objects\characters\floodcarrier\ai\flood_carrier.character
+porttag replace objects\characters\floodcombat_elite\ai\floodcombat_elite.character
+porttag replace objects\characters\floodcombat_base\ai\floodcombat_base.character
+porttag replace objects\characters\floodcombat_elite\ai\floodcombat_elite_shielded.character
+porttag replace objects\characters\floodcombat_human\ai\flood_combat_human.character
+porttag replace objects\characters\floodcombat_brute\ai\floodcombat_brute.character
+porttag replace levels\solo\110_hc\shaders\flood_tendon.shader
+exit
+
+opencachefile firefightfolder\source_maps\h3\050_floodvoi.map
+porttag levels\solo\050_floodvoi\sky\floodvoi.skya
+exit
+
+edittag objects\characters\floodcombat_elite\floodcombat_elite.model
+setfield NewDamageInfo[0].ShieldRechargingEffect null
+savetagchanges
+Exit

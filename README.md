@@ -1,4 +1,4 @@
-# ElDewrito Firefight
+# ElDewrito Firefight DEV
 A firefight mod for ElDewrito. This repository contains all of the scripts, assets, and other data that you need to modify and build the pak for yourself. Some extra setup is required though, so follow the guide below. This is the DEV branch of the mod, so it may include content or changes that are buggy or incomplete. No releases will be published for this branch.
 
 # Configuration
@@ -47,7 +47,7 @@ Once you have completed the above steps, open TagTool and run the following comm
 
 `runcommands <path_to_repo>\build.cmds`
 
-**NOTE:** On the first build if you have no pre-existing audio and shader caches, it will take a *very* long time to build so expect to wait a while before it is finished. Once you successfully build the mod your audio and shader caches will be populated and subsequent builds should be considerably faster. If you already have audio and shader caches then it should take approxiamately 10 - 15 minutes to build depending on your PC specs. 
+**NOTE:** On the first build if you have no pre-existing audio and shader caches, it will take a *very* long time to build so expect to wait a while before it is finished. Once you successfully build the mod your audio and shader caches will be populated and subsequent builds should be considerably faster. If you already have audio and shader caches then it should take approxiamately 30 minutes to build depending on your PC specs. 
 
-## Contact
+# Contact
 If you have any questions, please feel free to DM @dirkkane on Discord or ping me in the ElDewrito Modpacks Discord server.

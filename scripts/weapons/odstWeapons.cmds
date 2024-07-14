@@ -1,0 +1,27 @@
+edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
+stringid add offset_plasma_rifle_red
+setfield WeaponTypeName offset_plasma_rifle_red
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.render_model
+setfield MarkerGroups[4].Markers[0].Translation 0.02655599 0.004300643 -0.0528338
+setfield MarkerGroups[4].Markers[0].Rotation -0.6164592 0.195706 -0.4600866 0.6082742
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+stringid add offset_silenced_smg
+setfield WeaponTypeName offset_silenced_smg
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+stringid add offset_automag
+setfield WeaponTypeName offset_automag
+savetagchanges
+exit
+runcommands firefightfolder\scripts\weapons\automagAnims.cmds

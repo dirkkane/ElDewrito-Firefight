@@ -1,141 +1,58 @@
 echo ==Enabling VISR...==
 echo
-runcommands firefightfolder\scripts\fixvisr.cmds
-
-echo ==Fixing hud...==
-echo
-importtag ui\chud\smg_silenced.chdt firefightfolder\tags\smg_silenced.chud_definition
-importtag ui\chud\automag.chdt firefightfolder\tags\automag.chud_definition
-
-generatebitmap ui\eldewrito\common\common_bitmaps\emblem firefightfolder\bitmaps\emblem.dds
-generatebitmap ui\chud\bitmaps\lives firefightfolder\bitmaps\lives.dds
+runcommands firefightfolder\scripts\hud\fixvisr.cmds
 
 echo ==Emblem and scoring UI...==
 echo
-edittag ui\chud\survival_scoreboard.chud_definition
-setfield HudWidgets[1].BitmapWidgets[1].Bitmap ui\eldewrito\common\common_bitmaps\emblem.bitmap
-setfield HudWidgets[2].BitmapWidgets[1].Bitmap ui\eldewrito\common\common_bitmaps\emblem.bitmap
-setfield HudWidgets[3].BitmapWidgets[1].Bitmap ui\eldewrito\common\common_bitmaps\emblem.bitmap
-setfield HudWidgets[4].BitmapWidgets[1].Bitmap ui\eldewrito\common\common_bitmaps\emblem.bitmap
-setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalColorA 141 10 19 32
-setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[2].BitmapWidgets[0].RenderData[0].LocalColorA 141 10 19 32
-setfield HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[3].BitmapWidgets[0].RenderData[0].LocalColorA 141 10 19 32
-setfield HudWidgets[3].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[4].BitmapWidgets[0].RenderData[0].LocalColorA 141 10 19 32
-setfield HudWidgets[4].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
+runcommands firefightfolder\scripts\hud\scoring.cmds
 
-echo ==Skull dimming...==
+echo ==Skulls...==
+runcommands firefightfolder\scripts\hud\skulls.cmds
+
+echo ==Covenant Shield Impacts...==
+runcommands firefightfolder\scripts\ai\fixShields.cmds
+
+echo ==Fixing ODST weapons...==
 echo
-setfield HudWidgets[7].BitmapWidgets[0].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[1].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[2].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[3].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[4].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[5].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[6].RenderData[0].OutputColorA PrimaryBackground
-setfield HudWidgets[7].BitmapWidgets[7].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[8].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[9].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[10].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[11].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[12].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[7].BitmapWidgets[13].RenderData[0].OutputColorA HighlightForeground
+runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
+runcommands firefightfolder\scripts\hud\weapons.cmds
 
-echo ==Skull help...==
-echo
-setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorC HighlightForeground
-setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorA HighlightForeground
-setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorC HighlightForeground
+echo ==FloodFight config...==
+runcommands firefightfolder\scripts\flood\portFlood.cmds
+runcommands firefightfolder\scripts\flood\floodSkybox.cmds
 
-setfield HudWidgets[7].BitmapWidgets[15].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[16].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[14].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[17].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[18].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[19].RenderData[0].OutputColorA LocalA
-setfield HudWidgets[7].BitmapWidgets[20].RenderData[0].OutputColorA LocalA
-
-echo ==Skull indicators...==
-echo
-setfield HudWidgets[7].BitmapWidgets[14].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[15].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[16].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[17].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[18].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[19].Bitmap null
-setfield HudWidgets[7].BitmapWidgets[20].Bitmap null
-savetagchanges
-exit
-
-echo ==Skull prompts...==
-runcommands firefightfolder\scripts\fixSkullMedalIcon.cmds
-
-echo ==Fixing shield impacts...==
-edittag objects\characters\brute\brute.model
-setfield ShieldImpactThirdPerson fx\shield_impacts\elite_3p.shield_impact
+echo ==h100 floodfight==
+DuplicateTag levels\atlas\h100\h100.scenario levels\dirk\floodfight\flood_h100.scenario
+edittag levels\dirk\floodfight\flood_h100.scenario
+setfield mapid 80085
+runcommands firefightfolder\scripts\flood\h100\h100disablePhantoms.cmds
+runcommands firefightfolder\scripts\flood\h100\h100floodCharPalette.cmds
+runcommands firefightfolder\scripts\flood\h100\h100floodWeapPalette.cmds
+runcommands firefightfolder\scripts\flood\h100\h100engineerAIFlood.cmds
+runcommands firefightfolder\scripts\flood\floodSkyboxSCNR.cmds
 SaveTagChanges
-exit
-edittag objects\characters\brute\brute_jumppack.model
-setfield ShieldImpactThirdPerson fx\shield_impacts\elite_3p.shield_impact
-savetagchanges
-exit
-edittag objects\characters\bugger\bugger.model
-setfield ShieldImpactThirdPerson fx\shield_impacts\elite_3p.shield_impact
-savetagchanges
-exit
-edittag objects\characters\engineer\engineer.model
-setfield ShieldImpactThirdPerson fx\shield_impacts\elite_3p.shield_impact
-savetagchanges
-exit
-edittag objects\characters\engineer\engineer_freeform.model
-setfield ShieldImpactThirdPerson fx\shield_impacts\elite_3p.shield_impact
-savetagchanges
-exit
+Exit
 
-echo ==Fixing weapons...==
-echo
-edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
-setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
-stringid add offset_plasma_rifle_red
-setfield WeaponTypeName offset_plasma_rifle_red
-savetagchanges
-exit
+echo ==l200 floodfight==
+DuplicateTag levels\atlas\l200\l200.scenario levels\dirk\floodfight\flood_l200.scenario
+edittag levels\dirk\floodfight\flood_l200.scenario
+setfield mapid 80083
+runcommands firefightfolder\scripts\flood\l200\l200floodCharPalette.cmds
+runcommands firefightfolder\scripts\flood\l200\l200floodWeapPalette.cmds
+runcommands firefightfolder\scripts\flood\l200\l200engineerAIFlood.cmds
+runcommands firefightfolder\scripts\flood\floodSkyboxSCNR.cmds
+SaveTagChanges
+Exit
 
-edittag objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.render_model
-setfield MarkerGroups[4].Markers[0].Translation 0.02655599 0.004300643 -0.0528338
-setfield MarkerGroups[4].Markers[0].Rotation -0.6164592 0.195706 -0.4600866 0.6082742
-savetagchanges
-exit
+echo ==Fix Rally Texture sort...=
+EditTag levels\atlas\sc120\sky\sc120_sky.sky_atm_parameters
+setfield TransparentSortDistance 200
+SaveTagChanges
+Exit
 
-edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
-stringid add offset_silenced_smg
-setfield WeaponTypeName offset_silenced_smg
-savetagchanges
-exit
+echo ==Fix nighttime blur...==
+runcommands firefightfolder\scripts\fixbloom.cmds
 
-edittag objects\weapons\pistol\automag\automag.weapon
-stringid add offset_automag
-setfield WeaponTypeName offset_automag
-savetagchanges
-exit
-
-runcommands firefightfolder\scripts\automagAnims.cmds
-
-echo ==Fixing pickup prompts...==
-runcommands firefightfolder\scripts\fixPickup.cmds
-
+echo ==mapinfo==
+generatecampaignfile firefightfolder\mapinfo
+UpdateMapFiles firefightfolder\mapinfo

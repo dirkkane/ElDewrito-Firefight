@@ -1,0 +1,67 @@
+edittag ui\chud\survival_scoreboard.chud_definition
+echo ==Skull dimming...==
+echo
+setfield HudWidgets[7].BitmapWidgets[0].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[1].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[2].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[3].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[4].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[5].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[6].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[7].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[8].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[9].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[10].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[11].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[12].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[13].RenderData[0].OutputColorA HighlightForeground
+
+echo ==Skull help...==
+echo
+setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorC HighlightForeground
+
+setfield HudWidgets[7].BitmapWidgets[15].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[16].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[14].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[17].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[18].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[19].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[20].RenderData[0].OutputColorA LocalA
+
+echo ==Skull indicators...==
+echo
+setfield HudWidgets[7].BitmapWidgets[14].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[15].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[16].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[17].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[18].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[19].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[20].Bitmap null
+savetagchanges
+exit
+
+echo ==Strings==
+edittag multiplayer\in_game_survival_messages.multilingual_unicode_string_list
+setstring english survival_skull_black_eye "\uE084   Melee to recharge your Stamina."
+setstring english survival_skull_famine "\uE084   Enemies drop low-ammo weapons."
+setstring english survival_skull_catch "\uE084   Enemies love to throw grenades."
+setstring english survival_skull_iron "\uE084   Respawning is disabled. Be Careful!"
+setstring english survival_skull_mythic "\uE084   Enemies have 2x health."
+setstring english survival_skull_thunderstorm "\uE084   Enemies are upgraded."
+setstring english survival_skull_tilt "\uE084   Enemy shields deflect bullets."
+setstring english survival_skull_tough_luck "\uE084   Enemies always evade danger."
+SaveTagChanges
+Exit
