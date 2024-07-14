@@ -1,5 +1,5 @@
 # ElDewrito Firefight
-A firefight mod for ElDewrito. This repository contains all of the scripts, assets, and other data that you need to modify and build the pak for yourself. Some extra setup is required though, so follow the guide below.
+A firefight mod for ElDewrito. This repository contains all of the scripts, assets, and other data that you need to modify and build the pak for yourself. Some extra setup is required though, so follow the guide below. This is the DEV branch of the mod, so it may include content or changes that are buggy or incomplete. No releases will be published for this branch.
 
 # Configuration
 ## Variables
@@ -16,7 +16,7 @@ Replace the word `path` next to `audiocache` and `shadercache` with the director
 ## Source Files
 This mod works by porting content from the original Xbox 360 version of Halo 3: ODST, you must provide the files needed for this mod yourself and place them in the `source_maps` folder as follows:
 
-**In the odst subfolder:**
+`source_maps\odst`:
 ```
 h100.map
 l200.map
@@ -31,7 +31,7 @@ mainmenu.map
 shared.map
 ```
 
-**In the h3 subfolder:**
+`source_maps\h3`:
 ```
 050_floodvoi.map
 110_hc.map
