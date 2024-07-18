@@ -1,3 +1,5 @@
 *.map
 modDescription.txt
 todo.txt
+buildPersonal.cmds
+buildFloodOnlyPersonal.cmds
