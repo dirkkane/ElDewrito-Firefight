@@ -3,7 +3,6 @@ importfonts firefightfolder\fonts\font_package.bin
 importtag ui\chud\smg_silenced.chdt firefightfolder\tags\smg_silenced.chud_definition
 importtag ui\chud\automag.chdt firefightfolder\tags\automag.chud_definition
 
-
 edittag ui\hud\hud_messages.multilingual_unicode_string_list
 setstring english ssmg_pickup "\uE461\uE45F to pick up|n|r\uE074"
 setstring english ssmg_swap "\uE461\uE45F to swap for|n|r\uE074"

@@ -27,6 +27,10 @@ echo ==sc120==
 opencachefile firefightfolder\source_maps\odst\sc120.map
 porttag *.scnr
 Exit
+EditTag levels\atlas\sc120\sky\sc120_sky.sky_atm_parameters
+setfield TransparentSortDistance 200
+SaveTagChanges
+Exit
 
 echo ==sc130==
 opencachefile firefightfolder\source_maps\odst\sc130.map

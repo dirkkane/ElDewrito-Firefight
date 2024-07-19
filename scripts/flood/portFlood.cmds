@@ -8,18 +8,18 @@ ignoreblamtag objects\characters\flood_tank\shaders\flood_fronds.shader
 ignoreblamtag objects\characters\flood_stalker\shaders\flood_fronds.shader
 ignoreblamtag objects\characters\flood_ranged\shaders\flood_fronds.shader
 
-porttag replace objects\characters\flood_infection\ai\flood_infection.character
-porttag replace objects\characters\flood_ranged\ai\flood_pureform_ranged.character
-porttag replace objects\characters\flood_pureforms\ai\flood_pureform.character
-porttag replace objects\characters\flood_tank\ai\flood_pureform_tank.character
-porttag replace objects\characters\flood_stalker\ai\flood_pureform_stalker.character
-porttag replace objects\characters\floodcarrier\ai\flood_carrier.character
-porttag replace objects\characters\floodcombat_elite\ai\floodcombat_elite.character
-porttag replace objects\characters\floodcombat_base\ai\floodcombat_base.character
-porttag replace objects\characters\floodcombat_elite\ai\floodcombat_elite_shielded.character
-porttag replace objects\characters\floodcombat_human\ai\flood_combat_human.character
-porttag replace objects\characters\floodcombat_brute\ai\floodcombat_brute.character
-porttag replace levels\solo\110_hc\shaders\flood_tendon.shader
+porttag objects\characters\flood_infection\ai\flood_infection.character
+porttag objects\characters\flood_ranged\ai\flood_pureform_ranged.character
+porttag objects\characters\flood_pureforms\ai\flood_pureform.character
+porttag objects\characters\flood_tank\ai\flood_pureform_tank.character
+porttag objects\characters\flood_stalker\ai\flood_pureform_stalker.character
+porttag objects\characters\floodcarrier\ai\flood_carrier.character
+porttag objects\characters\floodcombat_elite\ai\floodcombat_elite.character
+porttag objects\characters\floodcombat_base\ai\floodcombat_base.character
+porttag objects\characters\floodcombat_elite\ai\floodcombat_elite_shielded.character
+porttag objects\characters\floodcombat_human\ai\flood_combat_human.character
+porttag objects\characters\floodcombat_brute\ai\floodcombat_brute.character
+porttag levels\solo\110_hc\shaders\flood_tendon.shader
 exit
 
 opencachefile firefightfolder\source_maps\h3\050_floodvoi.map

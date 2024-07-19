@@ -12,8 +12,31 @@ useshadercache shadercache
 echo ==Port Maps==
 runcommands firefightfolder\scripts\portODSTFloodOnly.cmds
 
-echo ==Cache Config==
-runcommands firefightfolder\scripts\cacheBuilder.cmds
+echo ==Enabling VISR...==
+runcommands firefightfolder\scripts\hud\visr.cmds
+
+echo ==Emblem and scoring UI...==
+runcommands firefightfolder\scripts\hud\scoring.cmds
+
+echo ==Skulls...==
+runcommands firefightfolder\scripts\hud\skulls.cmds
+
+echo ==Covenant Shield Impacts...==
+runcommands firefightfolder\scripts\ai\fixShields.cmds
+
+echo ==Fixing ODST weapons...==
+runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
+runcommands firefightfolder\scripts\hud\weapons.cmds
+
+echo ==Floodfight...==
+runcommands firefightfolder\scripts\flood\floodfight.cmds
+
+echo ==Fix nighttime blur...==
+runcommands firefightfolder\scripts\fixbloom.cmds
+
+echo ==mapinfo==
+generatecampaignfile firefightfolder\mapinfo
+UpdateMapFiles firefightfolder\mapinfo
 
 echo ==images==
 addmodfiles firefightfolder\assets
