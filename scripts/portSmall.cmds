@@ -1,0 +1,15 @@
+echo ==sc110==
+opencachefile firefightfolder\source_maps\odst\sc110.map
+porttag *.scnr
+Exit
+
+echo ==l200==
+opencachefile firefightfolder\source_maps\odst\l200.map
+porttag *.scnr 
+exit
+
+echo ==h100==
+opencachefile firefightfolder\source_maps\odst\h100.map
+porttag *.scnr 
+exit
+

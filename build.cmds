@@ -1,15 +1,15 @@
 createmodpackage 1 large
 
-echo ==Set variables==
+echo ==Set variables...==
 setvariable firefightfolder path
 setvariable audiocache path
 setvariable shadercache path
 
-echo ==Porting Caches==
+echo ==Porting Caches...==
 useaudiocache audiocache
 useshadercache shadercache
 
-echo ==Port Maps==
+echo ==Port Maps...==
 runcommands firefightfolder\scripts\portODST.cmds
 
 echo ==Enabling VISR...==
@@ -18,11 +18,17 @@ runcommands firefightfolder\scripts\hud\visr.cmds
 echo ==Emblem and scoring UI...==
 runcommands firefightfolder\scripts\hud\scoring.cmds
 
+echo ==Medals...==
+runcommands firefightfolder\scripts\hud\medals.cmds
+
 echo ==Skulls...==
 runcommands firefightfolder\scripts\hud\skulls.cmds
 
 echo ==Covenant Shield Impacts...==
 runcommands firefightfolder\scripts\ai\fixShields.cmds
+
+echo ==Vehicle Animations...==
+runcommands firefightfolder\scripts\ai\animationGraphs.cmds
 
 echo ==Fixing ODST weapons...==
 runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
@@ -34,11 +40,12 @@ runcommands firefightfolder\scripts\flood\floodfight.cmds
 echo ==Fix nighttime blur...==
 runcommands firefightfolder\scripts\fixbloom.cmds
 
-echo ==mapinfo==
+echo ==Update mapinfo...==
 generatecampaignfile firefightfolder\mapinfo
 UpdateMapFiles firefightfolder\mapinfo
 
-echo ==images==
+echo ==Add images...==
 addmodfiles firefightfolder\assets
 
 savemodpackage
+DumpLog firefight_build.log

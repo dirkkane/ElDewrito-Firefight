@@ -1,5 +1,5 @@
-# ElDewrito Firefight DEV
-A firefight mod for ElDewrito. This repository contains all of the scripts, assets, and other data that you need to modify and build the pak for yourself. Some extra setup is required though, so follow the guide below. This is the DEV branch of the mod, so it may include content or changes that are buggy or incomplete. No releases will be published for this branch.
+# ElDewrito Firefight
+A firefight mod for ElDewrito. This repository contains all of the scripts, assets, and other data that you need to modify and build the pak for yourself. Some extra setup is required though, so follow the guide below.
 
 # Configuration
 ## Variables
