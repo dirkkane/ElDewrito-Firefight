@@ -1,5 +1,8 @@
 *.map
+*.dat
+*.csv
 modDescription.txt
 todo.txt
-buildPersonal.cmds
-buildSmallPersonal.cmds
+usefulscnrscripts.txt
+buildPriv.cmds
+buildSmallPriv.cmds
