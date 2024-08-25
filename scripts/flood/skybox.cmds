@@ -1,4 +1,5 @@
-EditTag levels\multi\guardian\sky\sky.render_model
+DuplicateTag levels\multi\guardian\sky\sky.render_model levels\dirk\floodfight\sky\sky.render_model
+EditTag levels\dirk\floodfight\sky\sky.render_model
 SetField materials[0].RenderMethod levels\multi\guardian\sky\shaders\skydome_dark.shader
 SetField materials[1].RenderMethod levels\multi\guardian\sky\shaders\guardian_sky_tree_branches.shader
 SetField materials[2].RenderMethod levels\solo\110_hc\shaders\flood_tendon.shader

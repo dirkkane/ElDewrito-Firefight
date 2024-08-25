@@ -1,8 +1,13 @@
 OpenCacheFile firefightfolder\source_maps\ms23\tags.dat
-porttag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v1.render_model
 porttag objects\weapons\rifle\smg\fp_smg\fp_smg_v5.render_model
 porttag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle_v1.render_model
+porttag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v1.render_model
 Exit
+
+# OpenCacheFile firefightfolder\source_maps\ms29\tags.dat
+# nameblamtag 0x0E2F objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v1
+# porttag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v1.render_model
+# Exit
 
 edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle_v1.render_model

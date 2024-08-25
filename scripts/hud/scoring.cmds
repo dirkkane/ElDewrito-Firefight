@@ -1,5 +1,10 @@
-generatebitmap ui\eldewrito\common\common_bitmaps\emblem firefightfolder\bitmaps\emblem.dds
-generatebitmap ui\chud\bitmaps\lives firefightfolder\bitmaps\lives.dds
+generatebitmap ui\chud\bitmaps\lives firefightfolder\scripts\hud\lives.dds
+
+edittag ui\eldewrito\common\common_bitmaps\emblem.bitmap
+setfield Images[0].Width 32
+setfield Images[0].Height 28
+savetagchanges
+exit
 
 edittag ui\chud\survival_scoreboard.chud_definition
 setfield HudWidgets[1].BitmapWidgets[1].Bitmap ui\eldewrito\common\common_bitmaps\emblem.bitmap

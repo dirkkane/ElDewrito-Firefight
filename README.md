@@ -3,7 +3,7 @@ A firefight mod for ElDewrito. This repository contains all of the scripts, asse
 
 # Configuration
 ## Variables
-The first thing you will need to do is change the following lines at the beginning of `build.cmds` and `buildFloodOnly.cmds`:
+The first thing you will need to do is change the following lines at the beginning of `build.cmds` and `buildSmall.cmds`:
 
 ```
 setvariable firefightfolder path
