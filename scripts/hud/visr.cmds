@@ -22,6 +22,13 @@ exit
 opencachefile firefightfolder\source_maps\odst\h100.map
 porttag replace objects\characters\odst_recon\fx\vision_mode\vision_mode.effect
 porttag sound\game_sfx\ui\hud_ui\vision_on.sound
-nametag sound\weapons\battle_rifle\flashlight.sound sound\weapons\battle_rifle\flashlight_old
-nametag sound\game_sfx\ui\hud_ui\vision_on.sound sound\weapons\battle_rifle\flashlight
+porttag sound\game_sfx\ui\hud_ui\vision_off.sound
+Exit
+
+EditTag globals\globals.globals
+SetField PlayerInformation[0].FlashlightOn sound\game_sfx\ui\hud_ui\vision_on.sound
+SetField PlayerInformation[0].FlashlightOff sound\game_sfx\ui\hud_ui\vision_off.sound
+SetField PlayerInformation[1].FlashlightOn sound\game_sfx\ui\hud_ui\vision_on.sound
+SetField PlayerInformation[1].FlashlightOff sound\game_sfx\ui\hud_ui\vision_off.sound
+SaveTagChanges
 Exit
