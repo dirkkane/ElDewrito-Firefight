@@ -4,11 +4,53 @@ importtag ui\chud\smg_silenced.chdt firefightfolder\tags\smg_silenced.chud_defin
 importtag ui\chud\automag.chdt firefightfolder\tags\automag.chud_definition
 
 edittag ui\hud\hud_messages.multilingual_unicode_string_list
-setstring english ssmg_pickup "\uE461\uE45F to pick up|n|r\uE074"
-setstring english ssmg_swap "\uE461\uE45F to swap for|n|r\uE074"
-setstring english ssmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE074"
-setstring english ssmg_switch_to  "Out of ammo|nPress \uE446 to switch to |r\uE074"
+stringid add ssmg_dual
+stringid add ssmg_dual_swap
+stringid add amag_pickup
+stringid add amag_picked_up
+stringid add amag_swap
+stringid add amag_swap_ai
+stringid add amag_switch_to
+stringid add amag_dual
+stringid add amag_dual_swap
+
+setstring english ssmg_pickup "\uE461\uE45F to pick up|n|r\uFB03"
+setstring english ssmg_swap "\uE461\uE45F to swap for|n|r\uFB03"
+setstring english ssmg_swap_ai "\uE461\uE45F to take ally's|n|r\uFB03"
+setstring english ssmg_switch_to  "Out of ammo|nPress \uE446 to switch to |r\uFB03"
+setstring english ssmg_dual "\uE461 \uE45E to dual-wield|r|n\uFB03"
+setstring english ssmg_dual_swap "\uE461 \uE45E to swap for|r|n\uFB03"
+
+setstring english amag_pickup "\uE461\uE45F to pick up|n|r\uFB04"
+setstring english amag_picked_up "Picked up an Automag"
+setstring english amag_swap "\uE461\uE45F to swap for|n|r\uFB04"
+setstring english amag_swap_ai "\uE461\uE45F to take ally's|n|r\uFB04"
+setstring english amag_switch_to  "Out of ammo|nPress \uE446 to switch to |r\uFB04"
+setstring english amag_dual "\uE461 \uE45E to dual-wield|r|n\uFB04"
+setstring english amag_dual_swap "\uE461 \uE45E to swap for|r|n\uFB04"
 SaveTagChanges
+Exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield PickupMessage ssmg_pickup
+setfield SwapMessage ssmg_swap
+setfield PickedUpMessage ssmg_picked_up
+setfield SwitchToMessage ssmg_switch_to
+setfield SwitchToFromAiMessage ssmg_swap_ai
+setfield PickupOrDualWieldMessage ssmg_dual
+setfield SwapOrDualWieldMessage ssmg_dual_swap
+savetagchanges
+Exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield PickupMessage amag_pickup
+setfield SwapMessage amag_swap
+setfield PickedUpMessage amag_picked_up
+setfield SwitchToMessage amag_switch_to
+setfield SwitchToFromAiMessage amag_swap_ai
+setfield PickupOrDualWieldMessage amag_dual
+setfield SwapOrDualWieldMessage amag_dual_swap
+savetagchanges
 Exit
 
 edittag ui\chud\globals.chud_globals_definition

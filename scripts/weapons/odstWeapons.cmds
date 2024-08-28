@@ -14,12 +14,16 @@ exit
 
 edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
 setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setfield WeaponFlags.NewFlags LoopFPFiringAnimation,CanBeDualWielded
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.8
 setfield WeaponTypeName offset_smg
 setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
 savetagchanges
 exit
 
 edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.8
 setfield CenteredFirstPersonWeaponOffset 0 0 -0.005
 setfield WeaponTypeName offset_magnum
 savetagchanges
