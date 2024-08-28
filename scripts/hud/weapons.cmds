@@ -42,6 +42,11 @@ setfield SwapOrDualWieldMessage ssmg_dual_swap
 savetagchanges
 Exit
 
+edittag ui\chud\smg_silenced.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].BitmapSequenceIndex 5
+savetagchanges
+Exit
+
 edittag objects\weapons\pistol\automag\automag.weapon
 setfield PickupMessage amag_pickup
 setfield SwapMessage amag_swap

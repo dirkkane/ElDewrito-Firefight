@@ -24,9 +24,6 @@ runcommands firefightfolder\scripts\hud\medals.cmds
 echo ==Skulls...==
 runcommands firefightfolder\scripts\hud\skulls.cmds
 
-echo ==Covenant Shield Impacts...==
-runcommands firefightfolder\scripts\ai\shields.cmds
-
 echo ==Vehicle Animations...==
 runcommands firefightfolder\scripts\ai\animationGraphs.cmds
 
@@ -36,6 +33,9 @@ runcommands firefightfolder\scripts\hud\weapons.cmds
 
 echo ==Floodfight...==
 runcommands firefightfolder\scripts\flood\floodfight.cmds
+
+echo ==Shield Impacts...==
+runcommands firefightfolder\scripts\ai\shields.cmds
 
 echo ==Fix nighttime blur...==
 runcommands firefightfolder\scripts\fixbloom.cmds
