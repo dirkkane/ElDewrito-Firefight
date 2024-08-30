@@ -40,6 +40,9 @@ runcommands firefightfolder\scripts\ai\shields.cmds
 echo ==Fix nighttime blur...==
 runcommands firefightfolder\scripts\fixbloom.cmds
 
+echo ==Menu setup...==
+runcommands firefightfolder\scripts\menu\mainmenu.cmds
+
 echo ==Update mapinfo...==
 generatecampaignfile firefightfolder\mapinfo
 UpdateMapFiles firefightfolder\mapinfo
