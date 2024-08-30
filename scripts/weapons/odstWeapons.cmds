@@ -29,4 +29,5 @@ setfield WeaponTypeName offset_magnum
 savetagchanges
 exit
 runcommands firefightfolder\scripts\weapons\automagAnims.cmds
+runcommands firefightfolder\scripts\weapons\powerups.cmds
 # runcommands firefightfolder\scripts\weapons\sabermodels.cmds

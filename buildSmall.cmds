@@ -24,7 +24,6 @@ runcommands firefightfolder\scripts\hud\medals.cmds
 echo ==Skulls...==
 runcommands firefightfolder\scripts\hud\skulls.cmds
 
-
 echo ==Vehicle Animations...==
 runcommands firefightfolder\scripts\ai\animationGraphs.cmds
 
