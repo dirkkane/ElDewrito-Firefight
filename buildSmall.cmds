@@ -24,8 +24,9 @@ runcommands firefightfolder\scripts\hud\medals.cmds
 echo ==Skulls...==
 runcommands firefightfolder\scripts\hud\skulls.cmds
 
-echo ==Vehicle Animations...==
+echo ==Fixing AI...==
 runcommands firefightfolder\scripts\ai\animationGraphs.cmds
+runcommands firefightfolder\scripts\ai\weapons.cmds
 
 echo ==Fixing ODST weapons...==
 runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
