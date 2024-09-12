@@ -1,0 +1,4 @@
+edittag ui\halox\pregame_lobby\selection\pregame_survival_level_selection.gui_screen_widget_definition
+setfield GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds720p 55 245 0 0
+SaveTagChanges
+Exit

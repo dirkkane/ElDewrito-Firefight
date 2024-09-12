@@ -1,97 +1,55 @@
 createmodpackage 1 large
 
-echo ==Set variables==
+echo ==Set variables...==
 setvariable firefightfolder path
 setvariable audiocache path
 setvariable shadercache path
 
-echo ==Cache setup...==
+echo ==Porting Caches...==
 useaudiocache audiocache
 useshadercache shadercache
 
-echo ==h100==
-opencachefile firefightfolder\source_maps\odst\h100.map
-porttag *.scnr 
-exit
+echo ==Port Maps...==
+runcommands firefightfolder\scripts\portODST.cmds
 
-runcommands firefightfolder\scripts\cacheBuilder.cmds
-Exit
+echo ==Enabling VISR...==
+runcommands firefightfolder\scripts\hud\visr.cmds
 
-echo ==h100 floodfight==
-runcommands firefightfolder\scripts\portFlood.cmds
-runcommands firefightfolder\scripts\floodSkybox.cmds
+echo ==Emblem and scoring UI...==
+runcommands firefightfolder\scripts\hud\scoring.cmds
 
-DuplicateTag levels\atlas\h100\h100.scenario levels\dirk\floodfight\flood_h100.scenario
-edittag levels\dirk\floodfight\flood_h100.scenario
-setfield mapid 80085
-runcommands firefightfolder\scripts\h100disablePhantoms.cmds
-runcommands firefightfolder\scripts\h100floodCharPalette.cmds
-runcommands firefightfolder\scripts\h100floodWeapPalette.cmds
-runcommands firefightfolder\scripts\h100engineerAIFlood.cmds
-runcommands firefightfolder\scripts\floodSkyboxSCNR.cmds
-SaveTagChanges
-Exit
+echo ==Medals...==
+runcommands firefightfolder\scripts\hud\medals.cmds
 
-echo ==l200==
-opencachefile firefightfolder\source_maps\odst\l200.map
-porttag *.scnr
-Exit
+echo ==Skulls...==
+runcommands firefightfolder\scripts\hud\skulls.cmds
 
-echo ==l200 floodfight==
-DuplicateTag levels\atlas\l200\l200.scenario levels\dirk\floodfight\flood_l200.scenario
-edittag levels\dirk\floodfight\flood_l200.scenario
-setfield mapid 80083
-runcommands firefightfolder\scripts\l200floodCharPalette.cmds
-runcommands firefightfolder\scripts\l200floodWeapPalette.cmds
-runcommands firefightfolder\scripts\l200engineerAIFlood.cmds
-runcommands firefightfolder\scripts\floodSkyboxSCNR.cmds
-runcommands firefightfolder\scripts\l200removeBuggerSpawns.cmds
-SaveTagChanges
-Exit
+echo ==Fixing AI...==
+runcommands firefightfolder\scripts\ai\animationGraphs.cmds
+runcommands firefightfolder\scripts\ai\weapons.cmds
 
-echo ==l300==
-opencachefile firefightfolder\source_maps\odst\l300.map
-porttag *.scnr
-Exit
+echo ==Fixing ODST weapons...==
+runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
+runcommands firefightfolder\scripts\hud\weapons.cmds
 
-echo ==sc100==
-opencachefile firefightfolder\source_maps\odst\sc100.map
-porttag *.scnr
-Exit
+echo ==Floodfight...==
+runcommands firefightfolder\scripts\flood\floodfight.cmds
 
-echo ==sc110==
-opencachefile firefightfolder\source_maps\odst\sc110.map
-porttag *.scnr
-Exit
+echo ==Shield Impacts...==
+runcommands firefightfolder\scripts\ai\shields.cmds
 
-echo ==sc120==
-opencachefile firefightfolder\source_maps\odst\sc120.map
-porttag *.scnr
-Exit
-EditTag levels\atlas\sc120\sky\sc120_sky.sky_atm_parameters
-setfield TransparentSortDistance 200
-SaveTagChanges
-Exit
-
-
-echo ==sc130==
-opencachefile firefightfolder\source_maps\odst\sc130.map
-porttag *.scnr
-Exit
-
-echo ==sc140==
-opencachefile firefightfolder\source_maps\odst\sc140.map
-porttag *.scnr
-Exit
-
-echo ==fixbloom==
+echo ==Fix nighttime blur...==
 runcommands firefightfolder\scripts\fixbloom.cmds
 
-echo ==images==
-addmodfiles firefightfolder\assets
+echo ==Menu setup...==
+# runcommands firefightfolder\scripts\menu\mainmenu.cmds
 
-echo ==mapinfo==
+echo ==Update mapinfo...==
 generatecampaignfile firefightfolder\mapinfo
 UpdateMapFiles firefightfolder\mapinfo
 
+echo ==Add images...==
+addmodfiles firefightfolder\assets
+
 savemodpackage
+DumpLog firefight_build.log

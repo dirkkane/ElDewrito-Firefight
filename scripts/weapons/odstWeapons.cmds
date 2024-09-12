@@ -1,0 +1,33 @@
+edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
+setfield WeaponTypeName offset_plasma_rife
+setfield CenteredFirstPersonWeaponOffset 0.075 0 -0.025
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.render_model
+setfield MarkerGroups[4].Markers[0].Translation 0.02655599 0.004300643 -0.0528338
+setfield MarkerGroups[4].Markers[0].Rotation -0.6164592 0.195706 -0.4600866 0.6082742
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setfield WeaponFlags.NewFlags LoopFPFiringAnimation,CanBeDualWielded
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.8
+setfield WeaponTypeName offset_smg
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.8
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.005
+setfield WeaponTypeName offset_magnum
+savetagchanges
+exit
+runcommands firefightfolder\scripts\weapons\automagAnims.cmds
+runcommands firefightfolder\scripts\weapons\powerups.cmds
+# runcommands firefightfolder\scripts\weapons\sabermodels.cmds

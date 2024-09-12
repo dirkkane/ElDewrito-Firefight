@@ -1,0 +1,55 @@
+createmodpackage 1 large
+
+echo ==Set variables...==
+setvariable firefightfolder path
+setvariable audiocache path
+setvariable shadercache path
+
+echo ==Porting Caches...==
+useaudiocache audiocache
+useshadercache shadercache
+
+echo ==Port Maps...==
+runcommands firefightfolder\scripts\portSmall.cmds
+
+echo ==Enabling VISR...==
+runcommands firefightfolder\scripts\hud\visr.cmds
+
+echo ==Emblem and scoring UI...==
+runcommands firefightfolder\scripts\hud\scoring.cmds
+
+echo ==Medals...==
+runcommands firefightfolder\scripts\hud\medals.cmds
+
+echo ==Skulls...==
+runcommands firefightfolder\scripts\hud\skulls.cmds
+
+echo ==Fixing AI...==
+runcommands firefightfolder\scripts\ai\animationGraphs.cmds
+runcommands firefightfolder\scripts\ai\weapons.cmds
+
+echo ==Fixing ODST weapons...==
+runcommands firefightfolder\scripts\weapons\odstWeapons.cmds
+runcommands firefightfolder\scripts\hud\weapons.cmds
+
+echo ==Floodfight...==
+runcommands firefightfolder\scripts\flood\floodfight.cmds
+
+echo ==Shield Impacts...==
+runcommands firefightfolder\scripts\ai\shields.cmds
+
+echo ==Fix nighttime blur...==
+runcommands firefightfolder\scripts\fixbloom.cmds
+
+echo ==Menu setup...==
+# runcommands firefightfolder\scripts\menu\mainmenu.cmds
+
+echo ==Update mapinfo...==
+generatecampaignfile firefightfolder\mapinfo
+UpdateMapFiles firefightfolder\mapinfo
+
+echo ==Add images...==
+addmodfiles firefightfolder\assets
+
+savemodpackage
+DumpLog firefight_build.log

@@ -1,0 +1,17 @@
+SetField weaponpalette[0].Object objects\weapons\pistol\automag\automag.weapon
+SetField weaponpalette[1].Object objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+SetField weaponpalette[2].Object objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+SetField weaponpalette[3].Object objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField weaponpalette[4].Object objects\weapons\rifle\smg\smg.weapon
+SetField weaponpalette[5].Object objects\weapons\rifle\assault_rifle_power\assault_rifle_power.weapon
+SetField weaponpalette[6].Object objects\weapons\rifle\dmr\dmr.weapon
+SetField weaponpalette[7].Object objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+SetField weaponpalette[8].Object objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+SetField weaponpalette[9].Object objects\weapons\support_low\brute_shot\brute_shot.weapon
+SetField weaponpalette[10].Object objects\weapons\rifle\shotgun\shotgun.weapon
+SetField weaponpalette[11].Object objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+SetField weaponpalette[12].Object null
+SetField weaponpalette[13].Object objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+SetField weaponpalette[14].Object objects\weapons\rifle\shotgun\shotgun.weapon
+SetField weaponpalette[15].Object objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField weaponpalette[16].Object objects\weapons\support_high\spartan_laser\spartan_laser.weapon

@@ -1,0 +1,109 @@
+edittag ui\chud\survival_scoreboard.chud_definition
+echo ==Skull icons...==
+echo
+setfield HudWidgets[7].BitmapWidgets[0].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[1].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[2].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[3].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[4].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[5].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[6].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].BitmapWidgets[7].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[8].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[9].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[10].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[11].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[12].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[7].BitmapWidgets[13].RenderData[0].OutputColorA HighlightForeground
+
+echo ==Skull descriptions...==
+echo
+setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[1].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[3].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[5].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[7].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[9].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[11].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorA HighlightForeground
+setfield HudWidgets[6].TextWidgets[13].RenderData[0].OutputColorC HighlightForeground
+setfield HudWidgets[6].TextWidgets[0].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[1].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[2].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[3].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[4].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[5].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[6].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[7].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[8].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[9].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[10].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[11].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[12].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[13].PlacementData[0].Anchor Topleft
+setfield HudWidgets[6].TextWidgets[0].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[1].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[2].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[3].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[4].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[5].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[6].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[7].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[8].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[9].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[10].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[11].PlacementData[0].Origin -1 -14
+setfield HudWidgets[6].TextWidgets[12].PlacementData[0].Origin -1 -12
+setfield HudWidgets[6].TextWidgets[13].PlacementData[0].Origin -1 -14
+
+echo ==Skull Animations...==
+echo
+setfield HudWidgets[6].PlacementData[0].Anchor BottomCenter
+setfield HudWidgets[6].PlacementData[0].Offset 0 50
+setfield HudWidgets[6].PlacementData[0].Scale 0.77 0.77
+setfield HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset -180 0
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Offset -180 0
+setfield HudWidgets[6].BitmapWidgets[2].PlacementData[0].Offset -120 0
+setfield HudWidgets[6].BitmapWidgets[3].PlacementData[0].Offset -120 0
+setfield HudWidgets[6].BitmapWidgets[4].PlacementData[0].Offset -60 0
+setfield HudWidgets[6].BitmapWidgets[5].PlacementData[0].Offset -60 0
+setfield HudWidgets[6].BitmapWidgets[6].PlacementData[0].Offset 0 0
+setfield HudWidgets[6].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HudWidgets[6].BitmapWidgets[8].PlacementData[0].Offset 60 0
+setfield HudWidgets[6].BitmapWidgets[9].PlacementData[0].Offset 60 0
+setfield HudWidgets[6].BitmapWidgets[10].PlacementData[0].Offset 120 0
+setfield HudWidgets[6].BitmapWidgets[11].PlacementData[0].Offset 120 0
+setfield HudWidgets[6].BitmapWidgets[12].PlacementData[0].Offset 180 0
+setfield HudWidgets[6].BitmapWidgets[13].PlacementData[0].Offset 180 0
+
+
+echo ==Skull indicators...==
+echo
+setfield HudWidgets[7].BitmapWidgets[14].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[15].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[16].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[17].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[18].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[19].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[20].Bitmap null
+savetagchanges
+exit
+
+echo ==Strings==
+edittag multiplayer\in_game_survival_messages.multilingual_unicode_string_list
+setstring english survival_welcome "Current Objective: Survive"
+setstring english survival_skull_black_eye "\uE084   Melee to recharge your Stamina."
+setstring english survival_skull_famine "\uE084   Enemies drop low-ammo weapons."
+setstring english survival_skull_catch "\uE084   Enemies love to throw grenades."
+setstring english survival_skull_iron "\uE084   Respawning is disabled. Be Careful!"
+setstring english survival_skull_mythic "\uE084   Enemies have 2x health."
+setstring english survival_skull_thunderstorm "\uE084   Enemies are upgraded."
+setstring english survival_skull_tilt "\uE084   Enemy shields deflect bullets."
+setstring english survival_skull_tough_luck "\uE084   Enemies always evade danger."
+SaveTagChanges
+Exit

@@ -1,0 +1,23 @@
+edittag objects\characters\odst_recon\fp\weapons\pistol\fp_automag\fp_automag.model_animation_graph
+addanimation firefightfolder\anims\automag
+addblockelements Modes[0].WeaponClass[0].WeaponIk
+setfield Modes[0].WeaponClass[0].WeaponIk[0].Marker left_hand
+setfield Modes[0].WeaponClass[0].WeaponIk[0].AttachToMarker left_hand
+sortmodes
+setfield Animations[23].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield Animations[27].PlaybackFlags DisableWeaponIk
+setfield Animations[29].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield Animations[30].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield Animations[31].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield Animations[40].PlaybackFlags DisableWeaponIk
+addblockelements animations[41].animationdata.FrameEvents 1
+setfield animations[41].animationdata.Frameevents[0].Frame 12
+setfield Animations[41].PlaybackFlags DisableWeaponIk
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\automag\fp_automag\fp_automag.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.003 -0.00477 -0.032
+setfield MarkerGroups[1].Markers[0].Rotation -0.475 -0.028 -0.33 0.818
+savetagchanges
+exitto tags

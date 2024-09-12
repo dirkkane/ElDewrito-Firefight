@@ -1,0 +1,43 @@
+echo ==FloodFight config...==
+runcommands firefightfolder\scripts\flood\portFlood.cmds
+runcommands firefightfolder\scripts\flood\skybox.cmds
+
+echo ==h100 floodfight==
+DuplicateTag levels\atlas\h100\h100.scenario levels\dirk\flood_h100\flood_h100.scenario
+edittag levels\dirk\flood_h100\flood_h100.scenario
+setfield mapid 80085
+runcommands firefightfolder\scripts\flood\h100\disablePhantoms.cmds
+runcommands firefightfolder\scripts\flood\h100\floodCharPalette.cmds
+runcommands firefightfolder\scripts\flood\h100\floodWeapPalette.cmds
+runcommands firefightfolder\scripts\flood\h100\engineerAIFlood.cmds
+setfield skyreferences[0].skyobject levels\dirk\flood_h100\sky\sky.scenery
+setfield skyparameters levels\solo\050_floodvoi\sky\floodvoi.sky_atm_parameters
+SaveTagChanges
+Exit
+
+echo ==l200 floodfight==
+DuplicateTag levels\atlas\l200\l200.scenario levels\dirk\flood_l200\flood_l200.scenario
+edittag levels\dirk\flood_l200\flood_l200.scenario
+setfield mapid 80083
+runcommands firefightfolder\scripts\flood\l200\floodCharPalette.cmds
+runcommands firefightfolder\scripts\flood\l200\floodWeapPalette.cmds
+runcommands firefightfolder\scripts\flood\l200\engineerAIFlood.cmds
+setfield skyreferences[0].skyobject levels\dirk\flood_h100\sky\sky.scenery
+setfield skyparameters levels\solo\050_floodvoi\sky\floodvoi.sky_atm_parameters
+SaveTagChanges
+Exit
+
+echo ==sc130 floodfight==
+# DuplicateTag levels\atlas\sc130\sc130.scenario levels\dirk\flood_sc130\flood_sc130.scenario
+# edittag levels\dirk\flood_sc130\flood_sc130.scenario
+# setfield mapid 80081
+# SaveTagChanges
+# Exit
+
+echo ==sc140 floodfight==
+# DuplicateTag levels\atlas\sc140\sc140.scenario levels\dirk\flood_sc140\flood_sc140.scenario
+# edittag levels\dirk\flood_sc140\flood_sc140.scenario
+# setfield mapid 80082
+# runcommands firefightfolder\scripts\flood\sc140\disablePhantoms.cmds
+# SaveTagChanges
+# Exit
