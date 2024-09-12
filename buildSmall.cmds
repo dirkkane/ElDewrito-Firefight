@@ -42,7 +42,7 @@ echo ==Fix nighttime blur...==
 runcommands firefightfolder\scripts\fixbloom.cmds
 
 echo ==Menu setup...==
-runcommands firefightfolder\scripts\menu\mainmenu.cmds
+# runcommands firefightfolder\scripts\menu\mainmenu.cmds
 
 echo ==Update mapinfo...==
 generatecampaignfile firefightfolder\mapinfo

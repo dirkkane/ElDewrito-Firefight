@@ -28,16 +28,16 @@ SaveTagChanges
 Exit
 
 echo ==sc130 floodfight==
-DuplicateTag levels\atlas\sc130\sc130.scenario levels\dirk\flood_sc130\flood_sc130.scenario
-edittag levels\dirk\flood_sc130\flood_sc130.scenario
-setfield mapid 80081
-SaveTagChanges
-Exit
+# DuplicateTag levels\atlas\sc130\sc130.scenario levels\dirk\flood_sc130\flood_sc130.scenario
+# edittag levels\dirk\flood_sc130\flood_sc130.scenario
+# setfield mapid 80081
+# SaveTagChanges
+# Exit
 
 echo ==sc140 floodfight==
-DuplicateTag levels\atlas\sc140\sc140.scenario levels\dirk\flood_sc140\flood_sc140.scenario
-edittag levels\dirk\flood_sc140\flood_sc140.scenario
-setfield mapid 80082
-runcommands firefightfolder\scripts\flood\sc140\disablePhantoms.cmds
-SaveTagChanges
-Exit
+# DuplicateTag levels\atlas\sc140\sc140.scenario levels\dirk\flood_sc140\flood_sc140.scenario
+# edittag levels\dirk\flood_sc140\flood_sc140.scenario
+# setfield mapid 80082
+# runcommands firefightfolder\scripts\flood\sc140\disablePhantoms.cmds
+# SaveTagChanges
+# Exit
